@@ -1,0 +1,67 @@
+body {
+    font-size: 16px;
+    background-color: #6dc3e5;
+}
+
+.main_banner {
+    font-size: 25px;
+    margin: 5px;
+    padding: 7px;
+    text-align: center;
+    background-color: #FFD845;
+    color: #252627;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.main_banner:hover {
+    animation: mainBanner;
+    animation-duration: 2s;
+}
+
+@keyframes mainBanner {
+    100% {
+        background-color: #B29730;
+        color: bisque;
+    }
+}
+
+.container {
+    margin-top: 10px;
+}
+.container div {
+    display: inline-block;
+    padding: 8px;
+    color: #470047;
+    font-size: 25px;
+    background-color: #FFD845;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 20px;
+    width: 125px;
+    height: 30px;
+    color: bisque;
+    border-radius: 5px;
+    background-color: #E66115;
+}
+
+.btn:hover {
+    background-color: #b84d10;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer a{
+    color: inherit;
+}
+
+.footer:hover {
+    color: #E66115;
+}

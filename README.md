@@ -1,2 +1,2 @@
-# TottoLech_v.1.0
+# TottoLech
 Simple lotto simulator
