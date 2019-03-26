@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
 body {
     font-size: 16px;
     background-color: #6dc3e5;
@@ -18,13 +23,15 @@ body {
     display: inline-block;
     padding: 8px;
     color: #470047;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #FFD845;
     border-radius: 50%;
     width: 25px;
     height: 25px;
     text-align: center;
+    font-weight: bold;
 }
+
 .container {
     margin-top: 10px;
 }
@@ -42,14 +49,24 @@ body {
     background-color: #b84d10;
 }
 
-.footer {
+.footer-nav {
     margin-top: 60px;
 }
 
-.footer a{
+.footer-nav ul li {
+    padding: 8px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-nav a{
     color: inherit;
 }
 
-.footer:hover {
+.background:hover {
+    background-image: url(images/cream-circle.png);
     color: #E66115;
+    border-color: #E66115;
+    border: solid 2px;
+    border-radius: 15px;
 }
