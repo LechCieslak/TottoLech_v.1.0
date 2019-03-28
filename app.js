@@ -45,10 +45,20 @@ let randomNumberWithforLoop = () => {
     for(let i=0;i<6;i++) {
 
         luckyNumbers[i] = Math.ceil(Math.random() * (maxNum - minNum)) + minNum;
-        // wyeliminowac powtorzenia, jakims if-em pewnie
+    
+
+        while(luckyNumbers[i]==luckyNumbers[i-1]||luckyNumbers[i]==luckyNumbers[i-2]||luckyNumbers[i]==luckyNumbers[i-3]||luckyNumbers[i]==luckyNumbers[i-4]||luckyNumbers[i]==luckyNumbers[i-5]){
+            luckyNumbers[i] = Math.ceil(Math.random() * (maxNum - minNum)) + minNum;
+        }
       }
 
-      console.log(luckyNumbers);
+      function compareNr(a,b) {     //sortowanie
+          return a-b;
+      }
+
+      let tab2 = luckyNumbers.sort(compareNr);
+
+      console.log(tab2);
       
     
 }
