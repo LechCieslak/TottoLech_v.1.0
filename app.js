@@ -1,4 +1,8 @@
-let randomNumber = () => {
+function compareNr(a,b) {     //sortowanie
+    return a-b;
+}
+
+/*let randomNumberOldVersion = () => {
     let minNum = 0;     //losowana wartosc jest wieksza od min
     let maxNum = 49;    //losowana wartosc jest mniejsza lub rowna od max
 
@@ -33,11 +37,11 @@ let randomNumber = () => {
     document.getElementsByClassName("no4")[0].innerHTML = d;
     document.getElementsByClassName("no5")[0].innerHTML = e;
     document.getElementsByClassName("no6")[0].innerHTML = f;
-}
+}*/
 
-let randomNumberWithforLoop = () => {
+let randomNumber = () => {
     let minNum = 0;     //losowana wartosc jest wieksza od min
-    let maxNum = 6;    //losowana wartosc jest mniejsza lub rowna od max
+    let maxNum = 49;    //losowana wartosc jest mniejsza lub rowna od max
     let luckyNumbers = [];
 
     let a = Math.ceil(Math.random() * (maxNum - minNum)) + minNum;
@@ -52,15 +56,21 @@ let randomNumberWithforLoop = () => {
         }
       }
 
-      function compareNr(a,b) {     //sortowanie
-          return a-b;
-      }
+      document.getElementsByClassName("no1")[0].innerHTML = luckyNumbers[0];
+      document.getElementsByClassName("no2")[0].innerHTML = luckyNumbers[1];
+      document.getElementsByClassName("no3")[0].innerHTML = luckyNumbers[2];
+      document.getElementsByClassName("no4")[0].innerHTML = luckyNumbers[3];
+      document.getElementsByClassName("no5")[0].innerHTML = luckyNumbers[4];
+      document.getElementsByClassName("no6")[0].innerHTML = luckyNumbers[5];
 
-      let tab2 = luckyNumbers.sort(compareNr);
+      luckyNumbers = luckyNumbers.sort(compareNr);
 
-      console.log(tab2);
-      
+      document.getElementsByClassName("sortNo1")[0].innerHTML = luckyNumbers[0];
+      document.getElementsByClassName("sortNo2")[0].innerHTML = luckyNumbers[1];
+      document.getElementsByClassName("sortNo3")[0].innerHTML = luckyNumbers[2];
+      document.getElementsByClassName("sortNo4")[0].innerHTML = luckyNumbers[3];
+      document.getElementsByClassName("sortNo5")[0].innerHTML = luckyNumbers[4];
+      document.getElementsByClassName("sortNo6")[0].innerHTML = luckyNumbers[5];
+     
     
 }
-
-randomNumberWithforLoop();
