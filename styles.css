@@ -38,6 +38,11 @@ body {
     margin-bottom: 20px;
 }
 
+.content {
+    width: 330px;
+    margin: 0 auto;
+}
+
 .btn {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -55,11 +60,13 @@ body {
 }
 
 .footer-nav {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .footer-nav ul li {
     padding: 8px;
+    border: solid 2px;
+    border-color: #6dc3e5; /*myk - kolor border w kolorze tła body, żeby napisy nie "skakały", gdy po hoverze element ma granicę*/
     list-style-type: none;
     display: inline-block;
 }
